@@ -42,7 +42,6 @@ const reducer = (state= initState , action)=>{
     }
     if(action.type==='FILTER_PRODUCTS')
     {
-        console.log(action.filters)
         const filters= action.filters
 
         const products= state.products.filter(product=>{

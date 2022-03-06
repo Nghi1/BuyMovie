@@ -1,11 +1,22 @@
 import React, {useEffect} from 'react';
-import { View,Text, StyleSheet, Image, Button, Linking, TouchableOpacity} from 'react-native';
+import { View,Text, StyleSheet, Image, Linking, TouchableOpacity} from 'react-native';
 
 import {Entypo} from '@expo/vector-icons';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-
+import { Avatar, Card,Button, Title, Paragraph, DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
+ const LeftContent = props => <Avatar.Icon {...props} icon="filmstrip" />
+    const theme = {
+        ...DefaultTheme,
+        roundness: 2,
+        colors: {
+          ...DefaultTheme.colors,
+          primary: '#58ACFA',
+          accent: '#f1c40f',
+        },
+      };
 const DetailScreen = (props) => {
+   
     const{productId}=props.route.params;
     const avaiProducts= useSelector((state)=>state.filterProducts)
   const product=avaiProducts.find(item=>item.id===productId)
@@ -22,29 +33,24 @@ const DetailScreen = (props) => {
     </TouchableOpacity>
     }), [props.navigation]);
     return(
-        <View style={styles.view}>
-            
-            <Image style={styles.image} source={{ uri: product.image1}}/>
-            <Text style={styles.text}>{product.name}</Text>
-            <Text>{product.nam}</Text>
-            <Text>{product.nametag}</Text>
-            <Text style={styles.text}>{product.cotTruyen}</Text>
-            <Button title='TRAILER'  onPress={() => Linking.openURL(product.trailer)}></Button>
-            <Button title='ADD TO CART'  onPress={()=>addToCart()}></Button>
-            </View>
+        <PaperProvider theme={theme}>
+            <Card style={{margin:10}} >
+              <Card.Title title={product.name} subtitle={product.nam} left={LeftContent} />
+              <Card.Cover style={{width:355, height:200}} source={{ uri: product.image1}} />
+              <Card.Content>
+                <Title>{product.nametag}</Title>
+                <Paragraph style={{marginTop:20}}>{product.cotTruyen}</Paragraph>
+              </Card.Content>
+              <Card.Actions>
+                <Button mode="contained" onPress={() => Linking.openURL(product.trailer)}>TRAILER</Button>
+                <Button mode="contained" onPress={()=>addToCart()} style={{marginLeft:10}}>ADD TO CART</Button>
+              </Card.Actions>
+            </Card>
+          </PaperProvider>
       )
   };
   
 const styles = StyleSheet.create({
-    view:{
-            alignItems: 'center'
-    },
-    image:{
-        width:355,
-        height:200
-    },
-    text:{
-        marginTop: 10,
-    }
+   
   });
   export default DetailScreen;

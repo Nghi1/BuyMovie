@@ -43,7 +43,7 @@ const PRODUCTS = [
         ngonNgu: 'Phụ đề việt',
         theLoai: 'Hành Động ,Phiêu Lưu, Viễn Tưởng',
           
-        categoryId:'1', 
+        categoryId:'5', 
         image: 'https://upload.wikimedia.org/wikipedia/vi/3/3b/%C4%90%E1%BA%A5u_tr%C6%B0%E1%BB%9Dng_%E1%BA%A3o_2018.jpg', 
         image1: 'https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa6478ffa12f9c_dau-truong-ao-1.jpg',
         isFav: true, isBrand: true, isSale: false
@@ -93,7 +93,7 @@ const PRODUCTS = [
         ngonNgu: 'Phụ đề việt',
         theLoai: 'Hành Động, Viễn Tưởng, Phiêu Lưu, Chiến Tranh',
           
-        categoryId:'1', 
+        categoryId:'5', 
         image: 'https://upload.wikimedia.org/wikipedia/vi/d/d2/Alita_Thi%C3%AAn_th%E1%BA%A7n_chi%E1%BA%BFn_binh_%28%C3%A1p_ph%C3%ADch_2019%29.jpg', 
         image1: 'https://cdnimg.vietnamplus.vn/t1200/Uploaded/pcfo/2019_02_22/2202_alitabattleangel.jpg',
         cotTruyen: 'Alita: Thiên Thần Chiến Binh Alita được ví như một thần chết đến từ địa ngục vì những khả năng vượt qua mọi giới hạn mà cô sở hữu. Cô được tìm thấy bởi Tiến sĩ Ido và không thể nhớ mình là ai hay từ đâu tới. Để có thể tìm ra sự thật, Atila phải dấn thân vào những cuộc chiến đấu nảy lửa.',
@@ -422,5 +422,20 @@ const PRODUCTS = [
         cotTruyen: 'Alita: Thiên Thần Chiến Binh Alita được ví như một thần chết đến từ địa ngục vì những khả năng vượt qua mọi giới hạn mà cô sở hữu. Cô được tìm thấy bởi Tiến sĩ Ido và không thể nhớ mình là ai hay từ đâu tới. Để có thể tìm ra sự thật, Atila phải dấn thân vào những cuộc chiến đấu nảy lửa.',
         isFav: true, isBrand: true, isSale: true
     },
+    {   id: '26', 
+    name: 'Thanh Gươm Diệt Quỷ',
+    nametag: 'Kimetsu no Yaiba',
+    trailer: 'https://www.youtube.com/watch?v=oJf81IYInc8',
+    daoDien:'Đang Cập Nhật',
+    quocGia: 'Nhật Bản',
+    nam: '2020',
+    cotTruyen: 'Thanh gươm diệt quỷ hay còn được biết đến với tên Demon Slayer: Kimetsu no Yaiba là một bộ truyện tranh do Gotōge Koyoharu sáng tác và minh hoạ. Truyện kể về hành trình trở thành kiếm sĩ diệt quỷ của thiếu niên Kamado Tanjirō sau khi gia đình cậu bị quỷ sát hại và em gái Nezuko của cậu bị biến thành quỷ.',
+    ngonNgu: 'Phụ đề việt',
+    theLoai: 'Hài Hước, Hành Động, Hoạt Hình, Phiêu Lưu, Phim Bộ, Thần Thoại',
+    categoryId:'5', 
+    image: 'https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa6447e2a12fa2_chuyen-tau-vo-tan-1.jpg', 
+    image1: 'https://image.thanhnien.vn/1200x630/Uploaded/2022/ygtmjz/2020_11_24/thanh_guom_zfjf.jpg',
+    isFav: true, isBrand: true, isSale: false
+},
 ];
 export default PRODUCTS;
