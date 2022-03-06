@@ -11,6 +11,7 @@ import DetailScreen from '../screens/DetailScreen';
 import FavoritesScreen from '../screens/FavoritesScreen';
 import FilterScreen from '../screens/FilterScreen';
 import CartScreen from '../screens/CartScreen';
+import SAScreen from '../screens/SAScreen';
 
 import Ionicons from '@expo/vector-icons/Ionicons';
 
@@ -85,12 +86,21 @@ const FilterStack=()=>{
     )
 }
 
+const SAStack=()=>{
+  return(
+      <Stack.Navigator>
+          <Stack.Screen name='ShowAllScreen' component={SAScreen}/>
+      </Stack.Navigator>
+  )
+}
+
 const Navigation=()=>{
     return(
         <NavigationContainer>
       <Drawer.Navigator>
         <Drawer.Screen name="Home" component={MainTab} options={{headerShown: false}}/>
         <Drawer.Screen name="Filter" component={FilterStack} options={{headerShown: false}}/>
+        <Drawer.Screen name="ShowAll" component={SAStack} options={{headerShown: false}}/>
       </Drawer.Navigator>
     </NavigationContainer>
     )
