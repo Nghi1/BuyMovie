@@ -26,7 +26,7 @@ const ProductsScreen = (props) => {
               <Text style={styles.text2}>Quốc Gia: {item.quocGia}</Text>
             </View>
             <View>
-              <Text style={styles.text3}>Năm Sản xuất: {item.Nam}</Text>
+              <Text style={styles.text3}>Năm Sản xuất: {item.nam}</Text>
             </View>
             <View>
              <Text style={styles.text4}>Ngôn Ngữ: {item.ngonNgu}</Text>

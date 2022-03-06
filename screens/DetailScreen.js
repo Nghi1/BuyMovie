@@ -2,11 +2,11 @@ import React, {useEffect} from 'react';
 import { View,Text, StyleSheet, Image, Button, Linking, TouchableOpacity} from 'react-native';
 
 import {Entypo} from '@expo/vector-icons';
-import PRODUCT from '../data/detailproducts';
+import PRODUCTS from '../data/products';
 
 const DetailScreen = (props) => {
     const{productId}=props.route.params;
-  const product=PRODUCT.find(item=>item.id===productId)
+  const product=PRODUCTS.find(item=>item.id===productId)
   useEffect (() =>props.navigation.setOptions ({
      headerRight: ()=><TouchableOpacity>
           <Entypo name='star' size={36} color='red'/>
@@ -15,7 +15,7 @@ const DetailScreen = (props) => {
     return(
         <View style={styles.view}>
             
-            <Image style={styles.image} source={{ uri: product.image}}/>
+            <Image style={styles.image} source={{ uri: product.image1}}/>
             <Text style={styles.text}>{product.name}</Text>
             <Text>{product.nam}</Text>
             <Text>{product.nametag}</Text>
