@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import { View,Text, StyleSheet, FlatList, Image, TouchableOpacity} from 'react-native';
 
-import PRODUCTS from '../data/products';
+import PRODUCT from '../data/detailproducts';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 const FavoritesScreen = (props) => {
@@ -10,7 +10,7 @@ const FavoritesScreen = (props) => {
          <TouchableOpacity onPress={()=>props.navigation.openDrawer()}><View><Ionicons name='ios-menu' size={40} color='black'/></View></TouchableOpacity>
       
         }), [props.navigation]);
-    const favProducts=PRODUCTS.filter(product=>product.isFav===true)
+    const favProducts=PRODUCT.filter(product=>product.isFav===true)
     return(
         <FlatList
         data={favProducts}

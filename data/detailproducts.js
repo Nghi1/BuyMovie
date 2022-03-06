@@ -9,7 +9,7 @@ const PRODUCT = [
         image: 'https://image.thanhnien.vn/1200x630/Uploaded/2022/ygtmjz/2020_11_24/thanh_guom_zfjf.jpg',
         cotTruyen: 'Vào thời xa xưa, có một truyền thuyết về những con quỷ ăn thịt người luôn lãng vãng trong cánh rừng sâu. Vì điều này, người dân trong làng không bao giờ đi ra ngoài vào trời tối. Truyền thuyến cũng kể rằng có một Sát Quỷ Nhân luôn xuất hiện vào ban đêm để tiêu diệt những con quỷ khát máu này. Đối với chàng trai trẻ Tanjiro, câu chuyện dân gian ấy đã trở thành hiện thực cay đắng mà cậu phải hứng chịu... Sau khi cha cậu qua đời, Tanjiro luôn cố gắng hết sức để trở thành trụ cột trong gia đình. Dù cuộc sống vất vả, cực khổ, những gia đình của cậu vẫn luôn ngập tràn hạnh phúc. Nhưng niềm hạnh phúc ấy cũng không kéo dài lâu được. Một ngày nọ, khi Tanjiro trở về, cậu phát hiện gia đình mình đã bị sát hại dã man, và chỉ có một người duy nhất sống sót, đó là em gái Nezuko của cậu. Nhưng bi kịch thay, Nezuko đã trở thành con quỷ đáng sợ. Tuy nhiên, cô vẫn còn giữ một chút nhân tính. Đó là thời điểm bắt đầu cuộc chiến đơn độc của Tanjiro, tiêu diệt quỷ và tìm cách biến em gái mình trở lại làm người.',
         color: 'red', 
-        isFav: false, 
+        isFav: true, 
         isBrand: true, 
         isSale: true
     },
