@@ -2,13 +2,19 @@ import React, {useEffect} from 'react';
 import { View,Text, StyleSheet, Image, Button, Linking, TouchableOpacity} from 'react-native';
 
 import {Entypo} from '@expo/vector-icons';
-import PRODUCTS from '../data/products';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 const DetailScreen = (props) => {
     const{productId}=props.route.params;
-  const product=PRODUCTS.find(item=>item.id===productId)
+    const avaiProducts= useSelector((state)=>state.filterProducts)
+  const product=avaiProducts.find(item=>item.id===productId)
+  const dispatch= useDispatch()
+  const addToFav=()=>{
+      dispatch({type: 'ADD_TO_FAV', productId: productId})
+  }
   useEffect (() =>props.navigation.setOptions ({
-     headerRight: ()=><TouchableOpacity>
+     headerRight: ()=><TouchableOpacity onPress={()=>addToFav()}>
           <Entypo name='star' size={36} color='red'/>
     </TouchableOpacity>
     }), [props.navigation]);

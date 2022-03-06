@@ -3,6 +3,7 @@ import { View,Text, StyleSheet, FlatList, Image, TouchableOpacity} from 'react-n
 
 import PRODUCTS from '../data/products';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { useSelector } from 'react-redux';
 
 const FavoritesScreen = (props) => {
     useEffect (() =>props.navigation.setOptions ({
@@ -10,7 +11,8 @@ const FavoritesScreen = (props) => {
          <TouchableOpacity onPress={()=>props.navigation.openDrawer()}><View><Ionicons name='ios-menu' size={40} color='black'/></View></TouchableOpacity>
       
         }), [props.navigation]);
-    const favProducts=PRODUCTS.filter(product=>product.isFav===true)
+        const favProducts= useSelector((state)=>state.favProducts)
+        if(favProducts.length !=0)
     return(
         <FlatList
         data={favProducts}
@@ -21,6 +23,12 @@ const FavoritesScreen = (props) => {
         keyExtractor={item=>item.id}
         />
       )
+      else 
+      {
+          return(
+              <Text style={{fontSize:30, textAlign: 'center'}}>Nothing Found!</Text>
+          )
+      }
   };
   
 const styles = StyleSheet.create({

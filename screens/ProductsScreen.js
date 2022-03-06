@@ -1,7 +1,6 @@
 import React from 'react';
 import { View,Text, StyleSheet, TouchableOpacity, Image, FlatList} from 'react-native';
 
-import PRODUCTS from '../data/products';
 import { useSelector } from 'react-redux';
 
 const ProductsScreen = (props) => {
