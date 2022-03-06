@@ -40,6 +40,24 @@ const reducer = (state= initState , action)=>{
             return{...state, cartProducts: copy}
         }
     }
+    if(action.type==='FILTER_PRODUCTS')
+    {
+        console.log(action.filters)
+        const filters= action.filters
+
+        const products= state.products.filter(product=>{
+            if(filters.isBrandNew != product.isBrand)
+            {
+                return false
+            }
+            if(filters.isSale != product.isSale)
+            {
+                return false
+            }
+            return true
+        })
+        return {...state, filterProducts: products}
+    }
     return state
 }
 export default reducer;
