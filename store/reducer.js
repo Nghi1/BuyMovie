@@ -3,8 +3,10 @@ import PRODUCTS from "../data/products";
 const initState={
     products: PRODUCTS,
     favProducts: [],
+    cartProducts: [],
     filterProducts: PRODUCTS
 }
+
 const reducer = (state= initState , action)=>{
     if (action.type==='ADD_TO_FAV')
     {
@@ -20,6 +22,22 @@ const reducer = (state= initState , action)=>{
             let copy=[...state.favProducts]
             copy =copy.concat(product)
             return{...state, favProducts: copy}
+        }
+    }
+    if (action.type==='ADD_TO_CART')
+    {
+        const index=state.cartProducts.findIndex(product=>product.id===action.productId)
+
+        if(index>=0){
+            const copy=[...state.cartProducts]
+            copy.splice(index, 1)
+            return{...state, cartProducts: copy}
+        }
+        else{
+            const product=state.products.find(product=>product.id===action.productId)
+            let copy=[...state.cartProducts]
+            copy =copy.concat(product)
+            return{...state, cartProducts: copy}
         }
     }
     return state

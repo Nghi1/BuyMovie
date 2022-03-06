@@ -13,6 +13,9 @@ const DetailScreen = (props) => {
   const addToFav=()=>{
       dispatch({type: 'ADD_TO_FAV', productId: productId})
   }
+  const addToCart=()=>{
+    dispatch({type: 'ADD_TO_CART', productId: productId})
+}
   useEffect (() =>props.navigation.setOptions ({
      headerRight: ()=><TouchableOpacity onPress={()=>addToFav()}>
           <Entypo name='star' size={36} color='red'/>
@@ -27,6 +30,7 @@ const DetailScreen = (props) => {
             <Text>{product.nametag}</Text>
             <Text style={styles.text}>{product.cotTruyen}</Text>
             <Button title='TRAILER'  onPress={() => Linking.openURL(product.trailer)}></Button>
+            <Button title='ADD TO CART'  onPress={()=>addToCart()}></Button>
             </View>
       )
   };
