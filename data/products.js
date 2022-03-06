@@ -39,7 +39,7 @@ const PRODUCTS = [
         daoDien:'Steven Spielberg',
         quocGia: 'Mỹ',
         nam: '2018',
-        cotTruyen: 'Phim Đấu Trường Ảo, Ready Player One (2018) : Phim Đấu Trường Ảo lấy bối cảnh năm 2044, khi người sáng lập ra Oasis - một tựa game online, mất mạng. Khi đó, ông thách thức tất cả những người chơi Oasis đi tìm Easter Eggs - Trứng phục sinh. Phần thưởng dành cho người chiến thắng là những tài sản vô cùng quý báu mà ông để lại. Một chàng trai mang tên Wade Watts đã tìm ra được những gợi ý đầu tiên trong cuộc tìm kiếm và bắt đầu hành trình của mình.',
+        cotTruyen: 'Phim Đấu Trường Ảo, Ready Player One (2018) : Phim Đấu Trường Ảo lấy bối cảnh năm 2044, khi người sáng lập ra Oasis - một tựa game online, mất mạng. Khi đó, ông thách thức tất cả những người chơi Oasis đi tìm Easter Eggs - Trứng phục sinh. Phần thưởng dành cho người chiến thắng là những tài sản vô cùng quý báu mà ông để lại.',
         ngonNgu: 'Phụ đề việt',
         theLoai: 'Hành Động ,Phiêu Lưu, Viễn Tưởng',
           
@@ -73,7 +73,7 @@ const PRODUCTS = [
         daoDien:'Patty Jenkins',
         quocGia: 'Mỹ',
         nam: '2017',
-        cotTruyen: 'Nữ Thần Chiến Binh 1984 - Wonder Woman 1984 kể về người phụ nữ Diana Prince một chiến binh, đầy tài giỏi và dũng cảm. Cô sẵn sàng đứng lên chiến đấu vì hòa bình của thế giới. Vào năm 80 cuộc chiến tranh lạnh của Mỹ và Liên Xô trở nên đầy căn thẳng, khốc liệt hơn, và sự xuất hiện của Cheetah khiến mọi chuyện trở nên nguy hiểm và đáng sợ hơn rất nhiều. Cheetah đang muốn thực hiện một âm mưu phá hủy thế giới, Diana đành phải làm mọi cách và sử dụng kỹ năng chiến đấu của mình ngăn chặn cuộc âm mưu này.',
+        cotTruyen: 'Nữ Thần Chiến Binh 1984 - Wonder Woman 1984 kể về người phụ nữ Diana Prince một chiến binh, đầy tài giỏi và dũng cảm. Cô sẵn sàng đứng lên chiến đấu vì hòa bình của thế giới. Vào năm 80 cuộc chiến tranh lạnh của Mỹ và Liên Xô trở nên đầy căn thẳng, khốc liệt hơn, và sự xuất hiện của Cheetah khiến mọi chuyện trở nên nguy hiểm và đáng sợ hơn rất nhiều.',
         ngonNgu: 'Phụ đề việt',
         theLoai: 'Hành Động, Viễn Tưởng',
           
@@ -130,7 +130,7 @@ const PRODUCTS = [
         categoryId:'2', 
         image: 'https://upload.wikimedia.org/wikipedia/vi/d/d2/%C3%81p_ph%C3%ADch_K%E1%BA%BB_%C4%91%C3%A2m_l%C3%A9n.jpg', 
         image1: 'https://i.ytimg.com/vi/PdHlnVZV6Gc/maxresdefault.jpg',
-        cotTruyen: 'Kẻ Đâm Lén là bộ phim kể về nhân dịp sinh nhật lần thứ 85 của mình, tiểu thuyết gia trinh thám nổi tiếng Harlan Thombrey đã tổ chức một buổi tiệc với đông đủ các thành viên trong gia đình. Tuy nhiên, ông Harlan bất ngờ qua đời ngay trong ngày hôm đấy. Thám tử Benoit Blanc được cử đến để điều tra vụ án và tất cả mọi người trong gia đình đều trở thành nghi phạm. Vậy trong ngôi nhà nhiều thế hệ này, ai mới chính là Kẻ Đâm Lén?',
+        cotTruyen: 'Kẻ Đâm Lén là bộ phim kể về nhân dịp sinh nhật lần thứ 85 của mình, tiểu thuyết gia trinh thám nổi tiếng Harlan Thombrey đã tổ chức một buổi tiệc với đông đủ các thành viên trong gia đình. Tuy nhiên, ông Harlan bất ngờ qua đời ngay trong ngày hôm đấy. Thám tử Benoit Blanc được cử đến để điều tra vụ án và tất cả mọi người trong gia đình đều trở thành nghi phạm.',
         isFav: true, isBrand: false, isSale: true
     },
 
@@ -164,7 +164,7 @@ const PRODUCTS = [
         categoryId:'2', 
         image: 'https://upload.wikimedia.org/wikipedia/vi/thumb/c/c2/L%E1%BA%A7n_theo_d%E1%BA%A5u_v%E1%BA%BFt_poster.jpg/220px-L%E1%BA%A7n_theo_d%E1%BA%A5u_v%E1%BA%BFt_poster.jpg', 
         image1: 'http://phimchieurap.gdy.vn/wp-content/uploads/2020/12/lantheodauvet2013prisoners.jpg',
-        cotTruyen: 'Kể về một người thợ mộc ở một thị trấn nhỏ, tên là Keller Dover (do Hugh Jackman thủ vai). Sau khi đứa con gái sáu tuổi cùng với người bạn thân nhất của mình bị bắt cóc vào ngày Lễ Tạ Ơn, Dover đối đầu với thám tử Loki (doJake Gyllenhaal thủ vai), một thám tử trẻ tuổi và ngông nghênh chịu trách nhiệm điều tra vụ này. Kelly Dover phải đối mặt với cơn ác mộng tồi tệ nhất của bậc làm cha mẹ, khi mà mỗi phút trôi qua, sự nguy hiểm đối với con gái của mình càng tăng.',
+        cotTruyen: 'Kể về một người thợ mộc ở một thị trấn nhỏ, tên là Keller Dover (do Hugh Jackman thủ vai). Sau khi đứa con gái sáu tuổi cùng với người bạn thân nhất của mình bị bắt cóc vào ngày Lễ Tạ Ơn, Dover đối đầu với thám tử Loki (doJake Gyllenhaal thủ vai), một thám tử trẻ tuổi và ngông nghênh chịu trách nhiệm điều tra vụ này.',
         isFav: true, isBrand: false, isSale: true
     },
 
@@ -180,8 +180,8 @@ const PRODUCTS = [
           
         categoryId:'2', 
         image: 'https://upload.wikimedia.org/wikipedia/vi/3/35/Poster_phim_T%E1%BB%99i_%C3%A1c_ng%E1%BB%A7_say_2014.jpg', 
-        image: 'https://image.tmdb.org/t/p/w1280//Qf366kUqyfGkB7Q3vqlB8I0VIR.jpg',
-        cotTruyen: 'Tội Ác Ngủ Say kể về Christine Lucas là một phụ nữ đã bị mất đi trí nhớ sau một vụ tấn công đầy bạo lực nhiều năm về trước. Mỗi ngày thức dậy với Christine là một ngày đầy ắp những hoang mang khi cô chỉ nhớ được những việc xảy ra trong vòng 24 giờ hoặc trước khi cô trôi vào một giấc ngủ sâu. Cuộc hành trình đi tìm lại những ngày hôm qua để tố cáo kẻ thủ ác đã hãm hại cô không gớm tay có được sự trợ giúp của người chồng và vị bác sĩ điều trị cho Christine. Nhưng rồi một ngày cô bàng hoàng nhận ra rằng, người duy nhất cô có thể tin tưởng là không ai khác ngoài chính bản thân mình…',
+        image1: 'https://image.tmdb.org/t/p/w1280//Qf366kUqyfGkB7Q3vqlB8I0VIR.jpg',
+        cotTruyen: 'Tội Ác Ngủ Say kể về Christine Lucas là một phụ nữ đã bị mất đi trí nhớ sau một vụ tấn công đầy bạo lực nhiều năm về trước. Mỗi ngày thức dậy với Christine là một ngày đầy ắp những hoang mang khi cô chỉ nhớ được những việc xảy ra trong vòng 24 giờ hoặc trước khi cô trôi vào một giấc ngủ sâu.',
         isFav: true, isBrand: true, isSale: false
     },
  
@@ -215,7 +215,7 @@ const PRODUCTS = [
         categoryId:'2', 
         image: 'https://static2.vieon.vn/vieplay-image/poster_v4/2021/01/05/j0ctz1zk_truy-lung-sieu-trom_vertical-thumbnail-png_360_534.jpg', 
         image1: 'https://static.fptplay.net/static/img/share/video/19_11_2020/united19-11-2020_07g46-17.jpg',
-        cotTruyen: 'Cold Eyes sở hữu tựa đề Việt là Truy Lùng Siêu Trộm, là một phim thuộc thể dòng hành động hình sự của điện ảnh Hàn Quốc được công chiếu vào năm 2013. Phim được chỉ đạo nội dung bởi cặp đôi đạo diễn Ui-seok Jo và Byung-seo Kim và là một phiên bản khiến lại của bộ phim Hồng Kông Eye in the Sky, cùng sự tham gia của dàn diễn viên đình đám như Hyo-ju Han, Kyung Jin, Woo-sung Jung, Dong-Hwi Lee,…',
+        cotTruyen: 'Cold Eyes sở hữu tựa đề Việt là Truy Lùng Siêu Trộm, là một phim thuộc thể dòng hành động hình sự của điện ảnh Hàn Quốc được công chiếu vào năm 2013. Phim được chỉ đạo nội dung bởi cặp đôi đạo diễn Ui-seok Jo và Byung-seo Kim và là một phiên bản khiến lại của bộ phim Hồng Kông Eye in the Sky',
         isFav: true, isBrand: true, isSale: true
     },
 
@@ -266,7 +266,7 @@ const PRODUCTS = [
         categoryId:'3', 
         image: 'https://upload.wikimedia.org/wikipedia/vi/f/fc/%E1%BA%A4n_qu%E1%BB%B7_poster.jpeg', 
         image1: 'https://image.thanhnien.vn/w660/Uploaded/2022/kbfluau/2021_04_01/the-unholy_alqg.jpg',
-        cotTruyen: 'Ấn Quỷ - The Unholy là bộ phim thuộc thể loại kinh dị siêu nhiên của Mỹ do đạo diễn Evan Spiliotopoulos viết kịch bản đồng sản xuất và chỉ đạo, dựa trên cuốn tiểu thuyết được phát hành vào năm 1983 - Shrine của James Herbert. Bộ phim được sản xuất bởi Sam Raimi với nhà sản xuất Ghost House Pictures, tác phẩm có sự tham gia của các diễn viên Jeffrey Dean Morgan, Katie Aselton, William Sadler, Diogo Morgado, Cricket Brown, Cary Elwes.',
+        cotTruyen: 'Ấn Quỷ - The Unholy là bộ phim thuộc thể loại kinh dị siêu nhiên của Mỹ do đạo diễn Evan Spiliotopoulos viết kịch bản đồng sản xuất và chỉ đạo, dựa trên cuốn tiểu thuyết được phát hành vào năm 1983 - Shrine của James Herbert. Bộ phim được sản xuất bởi Sam Raimi với nhà sản xuất Ghost House Pictures',
         isFav: true, isBrand: false, isSale: true
     },
 
@@ -283,7 +283,7 @@ const PRODUCTS = [
         categoryId:'3', 
         image: 'https://cdnmedia.thethaovanhoa.vn/Upload/O5NP4aFt6GVwE7JTFAOaA/files/2021/05/OLD-gia-phim%20(1).jpg', 
         image1: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpOK-Q1r8YPH0NyBN4lLzuKPfuiIUO3Vlz4hl0uV39T6TLDVeobCpEgOymPhwvt17FNk0&usqp=CAU',
-        cotTruyen: 'Bộ phim theo chân bốn nhóm người lạ đi nghỉ cùng nhau, họ tới nghỉ dưỡng tại một bãi biển riêng đặc biệt của khu nghỉ mát, và họ chợt nhận ra có điều gì đó rất kỳ lạ. Một gia đình bốn người gồm bố hi họ nhận ra rằng có điều gì đó không thể sửa chữa được. Một gia đình bốn người - bố Guy (Gael García Bernal), mẹ Prisca (Vicky Krieps), Maddox 11 tuổi (Alexa Swinton) và Trent 6 tuổi (Nolan) tới khu nghỉ mát nhiệt đới ở một vị trí không xác định.',
+        cotTruyen: 'Bộ phim theo chân bốn nhóm người lạ đi nghỉ cùng nhau, họ tới nghỉ dưỡng tại một bãi biển riêng đặc biệt của khu nghỉ mát, và họ chợt nhận ra có điều gì đó rất kỳ lạ. Một gia đình bốn người gồm bố hi họ nhận ra rằng có điều gì đó không thể sửa chữa được.',
         isFav: true, isBrand: true, isSale: false
     },
  
@@ -300,7 +300,7 @@ const PRODUCTS = [
         categoryId:'3', 
         image: 'https://static.247phim.com/149828/conversions/5f2a6d32d318b_annabelle-02-435_627.jpg', 
         image1: 'https://vnn-imgs-f.vgcloud.vn/2019/06/17/17/bup-be-annabelle-da-san-sang-hu-doa-khan-gia.jpg',
-        cotTruyen: 'Annabelle: Ác Quỷ Trở Về là bộ phim kểv ề sau những sự kiện xưa, vợ chồng pháp sư trừ tà Warren đưa Annabelle về nhà và niêm phong nó trong một căn phòng đặc biệt. Một ngày nọ trong lúc vợ chồng Warren rời khỏi nhà để thực hiện một nhiệm vụ bí ẩn, cơn ác mộng thực sự bắt đầu khi người bạn Daniela của Mary Ellen - bảo mẫu nhà Warren tò mò khám phá căn phòng đầy những món đồ quỷ ám và vô tình giải thoát cho Annabelle. Từ đó, Annabelle dẫn dắt các linh hồn khác có trong căn phòng cùng trỗi dậy, với mục tiêu mới nhằm vào chính Judy  cô con gái nhà Warren và bạn bè của cô bé',
+        cotTruyen: 'Annabelle: Ác Quỷ Trở Về là bộ phim kểv ề sau những sự kiện xưa, vợ chồng pháp sư trừ tà Warren đưa Annabelle về nhà và niêm phong nó trong một căn phòng đặc biệt. Một ngày nọ trong lúc vợ chồng Warren rời khỏi nhà để thực hiện một nhiệm vụ bí ẩn',
         isFav: true, isBrand: false, isSale: false
     },
 
@@ -317,7 +317,7 @@ const PRODUCTS = [
         categoryId:'3', 
         image: 'https://khenphim.com/wp-content/uploads/2018/12/xac-chet-quy-am-3-poster.jpg', 
         image1: 'https://channel.mediacdn.vn/thumb_w/640/2018/12/22/photo-1-1545456432852457995219.jpg',
-        cotTruyen: 'Xác Chết Quỷ Ám kể về Megan Reed (Shay Mitchell) là một nữ bác sĩ có vấn đề về tâm lý nên luôn cần sự hỗ trợ của thuốc an thần trong những ca trực đêm tại nhà xác trong bệnh viện. Một ngày nọ, cô nhận được xác chết nhăn nhúm của Hannah Grace (Kirby Johnson) - người được cho là đã chết sau một buổi trừ tà thất bại.',
+        cotTruyen: 'Xác Chết Quỷ Ám kể về Megan Reed (Shay Mitchell) là một nữ bác sĩ có vấn đề về tâm lý nên luôn cần sự hỗ trợ của thuốc an thần trong những ca trực đêm tại nhà xác trong bệnh viện. Một ngày nọ, cô nhận được xác chết nhăn nhúm của Hannah Grace (Kirby Johnson).',
         isFav: true, isBrand: true, isSale: true
     },
 
@@ -351,7 +351,7 @@ const PRODUCTS = [
         categoryId:'4', 
         image: 'https://phimnhua.com/wp-content/uploads/2021/11/extinction_2018-270x400.jpg', 
         image1: 'https://static.vphimzz.net/img/vpreview-IbvT1xe.jpg',
-        cotTruyen: 'Phim tuyệt chủng Extinction Peter, một kỹ sư, có những cơn ác mộng lặp đi lặp lại, trong đó anh và mọi người anh biết phải chịu đựng những cuộc đối đầu bạo lực, giống như cuộc xâm lược của người ngoài hành tinh với kẻ thù không xác định. Điều này khiến anh ta có một mối quan hệ căng thẳng với vợ mình, Alice, và các con gái của anh ta là Hanna và Lucy. Anh ta miễn cưỡng đến một phòng khám để nhận trợ giúp tâm thần, chỉ để tìm một bệnh nhân ở đó tiết lộ rằng anh ta đang có những tầm nhìn tương tự, và psychs sẽ chỉ ngăn chặn những tầm nhìn này.',
+        cotTruyen: 'Phim tuyệt chủng Extinction Peter, một kỹ sư, có những cơn ác mộng lặp đi lặp lại, trong đó anh và mọi người anh biết phải chịu đựng những cuộc đối đầu bạo lực, giống như cuộc xâm lược của người ngoài hành tinh với kẻ thù không xác định.',
         isFav: true, isBrand: true, isSale: false
     },
  
@@ -368,7 +368,7 @@ const PRODUCTS = [
         categoryId:'4', 
         image: 'https://upload.wikimedia.org/wikipedia/vi/3/3b/%C4%90%E1%BA%A5u_tr%C6%B0%E1%BB%9Dng_%E1%BA%A3o_2018.jpg', 
         image1: 'https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa6478ffa12f9c_dau-truong-ao-1.jpg',
-        cotTruyen: 'Phim Đấu Trường Ảo, Ready Player One (2018) : Phim Đấu Trường Ảo lấy bối cảnh năm 2044, khi người sáng lập ra Oasis - một tựa game online, mất mạng. Khi đó, ông thách thức tất cả những người chơi Oasis đi tìm Easter Eggs - Trứng phục sinh. Phần thưởng dành cho người chiến thắng là những tài sản vô cùng quý báu mà ông để lại. Một chàng trai mang tên Wade Watts đã tìm ra được những gợi ý đầu tiên trong cuộc tìm kiếm và bắt đầu hành trình của mình.',
+        cotTruyen: 'Phim Đấu Trường Ảo, Ready Player One (2018) : Phim Đấu Trường Ảo lấy bối cảnh năm 2044, khi người sáng lập ra Oasis - một tựa game online, mất mạng.',
         isFav: true, isBrand: false, isSale: true
     },
 
