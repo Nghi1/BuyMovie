@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { View,Text, StyleSheet, FlatList, TouchableOpacity} from 'react-native';    
+import { View,Text, StyleSheet, FlatList, TouchableOpacity, ImageBackground} from 'react-native';    
 
 import CATEGORIES from '../data/categories';
 import Ionicons from '@expo/vector-icons/Ionicons';
@@ -14,9 +14,14 @@ const HomeScreen = (props) => {
         <FlatList
           data={CATEGORIES}
           renderItem={({ item }) =>
-          <TouchableOpacity onPress={()=>props.navigation.navigate('ProductsScreen', {categoryId: item.id})}><View style={[styles.view, {backgroundColor: item.color}]}>
-              <Text style={styles.text} >{item.name}</Text>
-            </View></TouchableOpacity>
+          <TouchableOpacity style={styles.background}
+            onPress={() => props.navigation.navigate('ProductsScreen', {categoryId: item.id})}> 
+            <View>
+            <ImageBackground  style={styles.image} source={item.image} resizeMode="cover" >
+                <Text style={styles.text} >{item.name}</Text>
+                </ImageBackground>
+            </View>
+          </TouchableOpacity>
           
           }
           keyExtractor={item => item.id}  
@@ -24,14 +29,22 @@ const HomeScreen = (props) => {
       )
   };
   
-const styles = StyleSheet.create({view: {
-    borderWidth: 2,
-    padding: 10,
-    margin: 10
+const styles = StyleSheet.create({  background: {
+  marginTop: 10,
+  marginLeft: 20,
+  marginRight:20,
+  marginBottom: 10,
+  height: 180,
+  borderRadius: 5,
+  borderColor:'#000000',
+  borderWidth: 1,
+
 },
+
 text:{
-  fontSize: 30,
-  alignSelf: 'center',
+fontSize: 20,
+marginTop: 151,
+color: '#FFFFFF'
 },
 });
   export default HomeScreen;
