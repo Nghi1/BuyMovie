@@ -15,10 +15,12 @@ const CartScreen = (props) => {
     return(
         <FlatList
         data={cartProducts}
-        renderItem={({item})=><View style={styles.view}>
+        renderItem={({item})=><TouchableOpacity 
+        onPress={() => props.navigation.navigate('DetailScreen', {productId: item.id})}>
+        <View style={styles.view}>
             <Image style={styles.image} source={item.image1}/>
             <Text style={styles.text}>{item.name}</Text>
-        </View>}
+        </View></TouchableOpacity>}
         keyExtractor={item=>item.id}
         />
       )
