@@ -12,6 +12,7 @@ import FavoritesScreen from '../screens/FavoritesScreen';
 import FilterScreen from '../screens/FilterScreen';
 import CartScreen from '../screens/CartScreen';
 import SAScreen from '../screens/SAScreen';
+import ContactScreen from '../screens/ContactScreen';
 
 import Ionicons from '@expo/vector-icons/Ionicons';
 
@@ -47,6 +48,14 @@ const CartStack=()=>{
   )
 }
 
+const ContactStack=()=>{
+  return(
+    <Stack.Navigator>
+        <Stack.Screen name='ContactScreen' component={ContactScreen}/>
+    </Stack.Navigator>
+)
+}
+
 const MainTab=()=>{
     return(
          <Tab.Navigator 
@@ -64,6 +73,9 @@ const MainTab=()=>{
             else if (route.name === 'CartTab') {
               iconName = focused ? 'ios-cart' : 'ios-cart-outline';
             }
+            else if (route.name === 'ContactTab') {
+              iconName = focused ? 'md-checkmark-circle' : 'md-checkmark-circle-outline';
+            }
 
             // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
@@ -74,6 +86,7 @@ const MainTab=()=>{
       <Tab.Screen name='HomeTab' component={HomeStack} options={{headerShown: false}}/>
           <Tab.Screen name='FavTab' component={FavStack}  options={{headerShown: false}}/>
           <Tab.Screen name='CartTab' component={CartStack} options={{headerShown: false}}/>
+          <Tab.Screen name='ContactTab' component={ContactStack} options={{headerShown: false}}/>
       </Tab.Navigator>
     )
 }
