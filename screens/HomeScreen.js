@@ -3,12 +3,18 @@ import { View,Text, StyleSheet, FlatList, TouchableOpacity, ImageBackground} fro
 
 import CATEGORIES from '../data/categories';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import companyLogo from '../images/movie-illustration-logo-vector-design-film-178252125.jpg';
 
 const HomeScreen = (props) => {
     useEffect (() =>props.navigation.setOptions ({
         headerLeft: ()=>
         <TouchableOpacity onPress={()=>props.navigation.openDrawer()}><View><Ionicons name='ios-menu' size={40} color='black'/></View></TouchableOpacity>
-     
+       }), [props.navigation]);
+       useEffect (() =>props.navigation.setOptions ({
+        headerRight:()=>
+        <div>
+        <img width={60} height={60} src={companyLogo} alt="BigCo Inc. logo"/>
+      </div>
        }), [props.navigation]);
     return(
         <FlatList

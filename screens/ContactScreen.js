@@ -1,8 +1,10 @@
-import * as React from 'react';
+import React, {useEffect} from 'react';
 import { Avatar } from 'react-native-paper';
 import { Text } from 'react-native-paper';
-import { View, StyleSheet,Button } from 'react-native';
+import { View, StyleSheet,Button, TouchableOpacity } from 'react-native';
 import { Linking } from 'react-native';
+
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 const HinhNenNghi = () => (
     <Avatar.Image size={100} source={require('../images/96948913.png')} />
@@ -11,7 +13,12 @@ const HinhNenNghi = () => (
 const HinhNenThai = () => (
   <Avatar.Image size={100} source={require('../images/MinhThai.jpg')} />
 );
-const ContactScreen = () =>  {
+const ContactScreen = (props) =>  {
+  useEffect (() =>props.navigation.setOptions ({
+    headerLeft: ()=>
+    <TouchableOpacity onPress={()=>props.navigation.openDrawer()}><View><Ionicons name='ios-menu' size={40} color='black'/></View></TouchableOpacity>
+ 
+   }), [props.navigation]);
     return(
       <View style={styles.container}>
       <View>
