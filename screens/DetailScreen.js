@@ -20,6 +20,8 @@ const DetailScreen = (props) => {
     const{productId}=props.route.params;
     const avaiProducts= useSelector((state)=>state.filterProducts)
   const product=avaiProducts.find(item=>item.id===productId)
+  const favProducts= useSelector((state)=>state.favProducts)
+  const isFav=favProducts.some(product=>product.id=productId)
   const dispatch= useDispatch()
   const addToFav=()=>{
       dispatch({type: 'ADD_TO_FAV', productId: productId})
@@ -28,10 +30,18 @@ const DetailScreen = (props) => {
     dispatch({type: 'ADD_TO_CART', productId: productId})
 }
   useEffect (() =>props.navigation.setOptions ({
-     headerRight: ()=><TouchableOpacity onPress={()=>addToFav()}>
+     headerRight: ()=>{
+       if(isFav===true)
+           return(
+           <TouchableOpacity onPress={()=>addToFav()}>
           <Entypo name='star' size={36} color='red'/>
-    </TouchableOpacity>
-    }), [props.navigation]);
+    </TouchableOpacity>)
+    else{
+            return( <TouchableOpacity onPress={()=>addToFav()}>
+            <Entypo name='star-outlined' size={36} color='red'/>
+      </TouchableOpacity>)}
+       }
+    }), [props.navigation, isFav]);
     return(
         <PaperProvider theme={theme}>
             <Card style={{margin:10}} >
